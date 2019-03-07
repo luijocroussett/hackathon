@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "just you_tube",
+  "description": "this is just you_tube",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "index.html"
+  },
+
+  "permissions": ["tabs", "activeTab", "https://youtube.com/*"],
+
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["<all_urls>"],
+      "js": ["eventpage.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

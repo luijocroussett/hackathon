@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section {
+  font-size: 3em;
+  color: #f17b7c;
+  font-family: "Sacramento", cursive;
+}
+img {
+  padding-right: 3em;
+  padding-left: 3em;
+}
